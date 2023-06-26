@@ -114,7 +114,7 @@ def add_logo():
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: https://avatars.githubusercontent.com/u/12800772?v=4;
+                background-image: url(https://avatars.githubusercontent.com/u/12800772?v=4);
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
