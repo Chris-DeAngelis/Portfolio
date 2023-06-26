@@ -108,6 +108,12 @@ st.markdown(
 #m4.metric(label = 'Time Lost today (Above 15 mins)',value = str(int(hl['Value']))+" Hours", delta = str(int(hl['Previous']))+' Compared to yesterday')
 #m1.write('')
 
+# Using object notation
+add_selectbox = st.sidebar.selectbox(
+    "Contact Me",
+    ("Email", "LinkedIn", "Github Profile")
+)
+
 # Load logo
 def add_logo():
     st.markdown(
@@ -118,6 +124,7 @@ def add_logo():
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
+                background-size: 200px 200px;
             }
             [data-testid="stSidebarNav"]::before {
                 content: "";
@@ -125,7 +132,7 @@ def add_logo():
                 margin-top: 20px;
                 font-size: 15px;
                 position: relative;
-                top: 100px;
+                top: 150px;
             }
         </style>
         """,
